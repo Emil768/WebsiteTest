@@ -1,0 +1,122 @@
+@media (max-width:1200px){
+    .header__search{
+        span{
+            display: none;
+        }
+    }
+    .container{
+        max-width: 970px;
+    }
+    .content__product-row{
+        flex-direction: column;
+    }
+    .content__product-title{
+        text-align: center;
+    }
+    .content__product-left{
+        margin: 0 auto;
+    }
+    .content__product-right{
+        margin: 20px auto 40px;
+    }
+}
+
+@media(max-width:1105px){
+    .header__nav{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+    .header__nav{
+        justify-content: space-between;
+    }
+    .header__nav .menu{
+        display: none;
+        position: absolute;
+        right: 25px;
+        z-index: 10;
+        top: 15%;
+    }
+    .header__nav .menu__item{
+        margin-bottom: 10px;
+        margin-right: 0;
+        font-size: 18px;
+        &:hover::after{
+            display: none;
+        }
+        
+    }
+    .header .header__btns .burger-menu{
+        display: block;
+    }
+    .header__search{
+       display: none;
+    }
+    .footer{
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width:767px){
+    .container{
+        max-width: none;
+    }
+   .content__product-left,
+   .content__product-block,
+   .footer__text{
+       width: 100%;
+   }
+   .content__product-title{
+        font-size: 20px;
+    }
+    .content__product-block-title{
+        font-size: 18px;
+    }
+    .content__product-block-text{
+        font-size: 12px;
+    }
+    .footer__social{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .footer__apps{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .footer__apps-content{
+        margin-right: 10px;
+    }
+}
+
+
+@media(max-width:560px){
+    .content__menu-item{
+        display: none;
+    }
+    .content .dropdown{
+        display: block;
+    }
+    .header .header__btns .mobile-nav{
+        width: 100%;
+    }
+    
+    .header__nav .menu{
+        right: 30%;
+    }
+}
+
+
+@media(max-width:370px){
+    .content__btn{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}
+

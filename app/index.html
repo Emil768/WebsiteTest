@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+     <div class="header__nav">
+      <a class="logo" href="#">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <ul class="menu" id="menu">
+        <form class="form" action="/">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search-form" type="text" name="" id="" placeholder="Поиск">
+        </form>
+          <li class="menu__item">
+            <a href="#">Связь</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i> 
+          </li>
+          <li class="menu__item">
+            <a href="#">Для дома</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu__item">
+            <a href="#">Для жизни</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu__item">
+            <a href="#">Финансы</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu__item">
+           <a href="#">Интернет-магазин</a>
+           <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+          <li class="menu__item">
+            <a href="#">Умные вещи</a>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </li>
+        </ul>
+        <div class="header__search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <span>Поиск</span>
+        </div>
+        <div class="header__btns">
+          <a class="btn header__btn" href="#">Войти</a>
+         <!-- Бургер -->
+        <div id="burger-menu" class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Конец бургера -->
+        <div id="mobile-inner" class="mobile-inner">
+          <div id="mobile-nav" class="mobile-nav"></div>
+        </div>
+        <div id="close" class="burger-close"></div>
+        </div>
+     </div>
+    </div>
+    
+  </header>
+  <!--Конец-->
+
+  <!-- Контент -->
+  <div class="content">
+    <div class="container">
+      <h1 class="content__title">Банковские продукты</h1>
+      <div class="content__menu">
+        <div class="dropdown" id="dropdown">
+          <div class="dropdown__item  dropdown-select">Кредитные карты</div>
+          <div class="dropdown__items">
+            <div class="dropdown__item " data-id="credit">Кредитные карты</div>
+            <div class="dropdown__item" data-id="debit">Дебетовые карты</div>
+            <div class="dropdown__item " data-id="none">Вирутальные карты</div>
+            <div class="dropdown__item" data-id="none">Кредиты</div>
+          </div>
+        </div>
+        <div class="content__menu-item active" id="credit">Кредитные карты</div>
+        <div class="content__menu-item" id="debit">Дебетовые карты</div>
+        <div class="content__menu-item">Вирутальные карты</div>
+        <div class="content__menu-item">Кредиты</div>
+      </div>
+      <!-- 1 столбец -->
+      <div class="content__product active" data-name="credit" data-dbname = "debit">
+        <div class="content__product-title">Универсальная карта MTS CASHBACK</div>
+        <div class="content__product-row">
+          <div class="content__product-left">
+           <div class="content__product-blocks">
+             <div class="content__product-block">
+               <div class="content__product-block-title">111 дней без %</div>
+               <div class="content__product-block-text">для покупок и платежей</div>
+             </div>
+             <div class="content__product-block">
+              <div class="content__product-block-title">500 000 руб.</div>
+              <div class="content__product-block-text">максимальный кредитный лимит</div>
+            </div>
+            <div class="content__product-block">
+              <div class="content__product-block-title">5% кэшбэк</div>
+              <div class="content__product-block-text">Аптеки, АЗС, Развлечения</div>
+            </div>
+            <div class="content__product-block">
+              <div class="content__product-block-title">0 руб.</div>
+              <div class="content__product-block-text">бесплатное обслуживание карты</div>
+            </div>
+           </div>
+          </div>
+          <div class="content__product-right">
+            <img src="img/mts-cashback-visual.png" alt="">
+          </div>
+          <div class="content__product-bottom">
+            <a class="btn content__btn" href="#">Оформить карту</a>
+            <a class="content__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- Конец -->
+       <!-- 2 столбец -->
+       <div class="content__product active" data-name="credit">
+        <div class="content__product-title">Кредитная карта МТС Деньги Weekend</div>
+        <div class="content__product-row">
+          <div class="content__product-left">
+           <div class="content__product-blocks">
+             <div class="content__product-block">
+               <div class="content__product-block-title">до 5% кэшбэк</div>
+               <div class="content__product-block-text">с выплатой каждую пятницу</div>
+             </div>
+             <div class="content__product-block">
+              <div class="content__product-block-title">до 51 дня</div>
+              <div class="content__product-block-text">льготный период кредитования</div>
+            </div>
+            <div class="content__product-block">
+              <div class="content__product-block-title">до 299 999 руб.</div>
+              <div class="content__product-block-text">кредитный лимит</div>
+            </div>
+            <div class="content__product-block">
+              <div class="content__product-block-title">бесплатная доставка</div>
+              <div class="content__product-block-text">курьером</div>
+            </div>
+           </div>
+          </div>
+          <div class="content__product-right">
+            <img src="img/credit-776x488_mts_dengi_weekend.jpg" alt="">
+          </div>
+          <div class="content__product-bottom">
+            <a class="btn content__btn" href="#">Оформить карту</a>
+            <a class="content__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- Конец -->
+       <!-- 3 столбец -->
+       <div class="content__product active" data-name="credit">
+        <div class="content__product-title">МТС Деньги Zero</div>
+        <div class="content__product-row">
+          <div class="content__product-left">
+           <div class="content__product-blocks">
+             <div class="content__product-block">
+               <div class="content__product-block-title">0% годовых</div>
+               <div class="content__product-block-text">кредитная карта без процентов</div>
+             </div>
+             <div class="content__product-block">
+              <div class="content__product-block-title">0 руб. комиссия</div>
+              <div class="content__product-block-text">за снятие наличных</div>
+            </div>
+            <div class="content__product-block">
+              <div class="content__product-block-title">30 руб. в день</div>
+              <div class="content__product-block-text">при наличии задолженности</div>
+            </div>
+            <div class="content__product-block">
+              <div class="content__product-block-title">бесплатная доставка</div>
+              <div class="content__product-block-text">курьером</div>
+            </div>
+           </div>
+          </div>
+          <div class="content__product-right">
+            <img src="img/zero-776x488_kreditnaya_karta_mts_dengi_zero.jpg" alt="">
+          </div>
+          <div class="content__product-bottom">
+            <a class="btn content__btn" href="#">Оформить карту</a>
+            <a class="content__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- Конец -->
+       <!-- 4 столбец-->
+       <div class="content__product " data-name="debit">
+        <div class="content__product-title">Дебетовая карта МТС Деньги Weekend</div>
+        <div class="content__product-row">
+          <div class="content__product-left">
+           <div class="content__product-blocks">
+             <div class="content__product-block">
+               <div class="content__product-block-title">до 5% кэшбэк</div>
+               <div class="content__product-block-text">с выплатой каждую пятницу</div>
+             </div>
+             <div class="content__product-block">
+              <div class="content__product-block-title">до 4% годовых</div>
+              <div class="content__product-block-text">на остаток собственных средств</div>
+            </div>
+            <div class="content__product-block">
+              <div class="content__product-block-title">0 руб.</div>
+              <div class="content__product-block-text">комиссия за снятие наличных</div>
+            </div>
+           </div>
+          </div>
+          <div class="content__product-right">
+            <img src="img/debit-776x488_debetovaya_karta_mts_dengi_weekend.jpg" alt="">
+          </div>
+          <div class="content__product-bottom">
+            <a class="btn content__btn" href="#">Оформить карту</a>
+            <a class="content__link" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- Конец -->
+    </div>
+  </div>
+  <!-- Конец -->
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__text">
+          <strong>МТС — связь и экосистема цифровых сервисов </strong>
+          <p>
+          Актуальные новости не только о тарифах и услугах связи,
+          но и новых продуктах МТС: цифровых приложениях для работы и отдыха, ТВ и медиа,финансовых сервисах,
+          технологиях для запуска и продвижения бизнеса и других сервисах компании
+          </p>
+        </div>
+        <div class="footer__social">
+          <div class="footer__social-title">Социальные сети</div>
+          <div class="footer__social-icons">
+            <a href="#">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__apps">
+          <div class="footer__apps-title">Приложения</div>
+          <div class="footer__apps-links">
+            <div class="footer__apps-link">
+              <img src="img/unnamed.png" alt="">
+              <div class="footer__apps-content">
+                <span>Мой МТС</span>
+                <a href="#">Скачать</a>
+              </div>
+            </div>
+            <div class="footer__apps-link">
+              <img src="img/13732347.png" alt="">
+              <div class="footer__apps-content">
+                <span>МТС Cashback</span>
+                <a href="#">Скачать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Конец -->
+  
+  <script src="https://use.fontawesome.com/601ec992b1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

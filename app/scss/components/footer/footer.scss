@@ -1,0 +1,77 @@
+.footer{
+    flex: 0 0 auto;
+    background-color: #f2f3f7;
+
+    &__content{
+        padding: 30px 0 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__text{
+        width: 45%;
+        text-align: left;
+
+        p{
+            line-height: 1.7;
+        }
+    }
+
+    &__social{
+        width: 20%;
+    
+        &-icons{
+            margin-top: 10px;
+        }
+
+        .fa{
+            margin-left: 5px;
+            display: inline-block;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            background: #c4c4c4;
+            transition: all ease .3s;
+
+            &-facebook:hover{
+                background: #3b5998;
+            }
+            &-vk:hover{
+                background: #4680C2;
+            }
+            &-odnoklassniki:hover{
+                background: #f99400;
+            }
+            &-twitter:hover{
+                background: #2ea6de;
+            }
+        }
+    }
+
+    &__apps{
+        width: 25%;
+ 
+        &-links{
+            display: flex;
+            margin-top: 10px;
+        }
+
+        &-link{
+            display: flex;
+            align-items: center;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &-content{
+            margin-left:8px;
+        }
+    }
+}
+
+

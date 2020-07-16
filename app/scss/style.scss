@@ -1,0 +1,62 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &.is-overflowed{
+        overflow: hidden;
+    }
+}
+
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    background: #E30611;
+    transition: all ease .3s;
+
+    &:hover{
+        background: darken(#E30611,5%);
+    }
+}
+
+.container{
+    max-width:1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.active{
+    display: block ;
+}
+
+.dis{
+    display: none;
+}
+
+@import "./components/header/header.scss";
+@import "./components/content/content.scss";
+@import "./components/footer/footer.scss";
+
+@import "media";
